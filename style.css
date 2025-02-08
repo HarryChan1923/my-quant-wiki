@@ -1,0 +1,263 @@
+/* 更新 html 背景设置：保持固定，并根据设备尺寸显示不同部分 */
+html {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overscroll-behavior: contain;
+}
+
+/* 保持 body 背景透明 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: transparent;
+}
+
+/* 禁用重复的伪元素背景 */
+body::before {
+    display: none;
+}
+
+/* 修改导航栏和容器背景为高不透明毛玻璃效果 */
+.navbar,
+.container {
+    background-color: rgba(254, 238, 246, 0.56);
+    /* 提高不透明度 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 0.8s ease-out;
+    margin: 20px 50px;
+    transition: all 0.6s ease;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem 2rem;
+    /* 顶部和左右留出间距 */
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-categories {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-categories a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.nav-categories a:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* 圆润效果 */
+    margin-right: 0.5rem;
+}
+
+.search-box button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    /* 圆润效果 */
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.container {
+    display: flex;
+    margin: 20px 50px;
+    /* 与导航栏左右保持一致 */
+    /* 半透明背景 */
+    border-radius: 16px;
+    /* 更圆润 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    /* 毛玻璃效果 */
+    animation: fadeInUp 0.8s ease-out;
+    transition: all 0.6s ease;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    margin-right: 2rem;
+}
+
+.content {
+    flex: 1;
+    padding: 15px;
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin-bottom: 0.5rem;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.article h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.article {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 12px;
+    /* 增加圆角 */
+    cursor: pointer;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* 新增全局动画 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 新增页脚样式 */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(254, 238, 246, 0.56);
+    margin: 20px 50px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s ease;
+}
+
+/* 新增响应式设计，但不改变 background-attachment 固定属性 */
+@media (max-width: 768px) {
+    html {
+        /* 小屏下只显示部分背景，仍固定 */
+        background: url('background.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .navbar,
+    .container,
+    .footer {
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-categories {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 0 0 10px 0;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+/* 新增大屏幕适配，避免大屏时壁纸重复 */
+@media (min-width: 1200px) {
+    html {
+        /* 大屏下同样固定背景 */
+        background: url('background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    body::before {
+        display: none;
+    }
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantitative Overview - Quantitative Investment Knowledge Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation section remains structurally unchanged -->
+    <nav class="navbar">
+        <div class="nav-title"><i class="fas fa-book"></i> My Knowledge Base</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search articles...">
+            <button><i class="fas fa-search"></i> Search</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main class="content">
+            <button class="back-button" onclick="window.location.href='index.html'">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </button>
+            <article class="article">
+                <h1>Quantitative Overview</h1>
+                <p>This page provides a detailed introduction to the core concepts, historical evolution, and key
+                    examples of quantitative investing, including the workings of quantitative hedge funds.</p>
+                <h1>What is a Quantitative Hedge Fund?</h1>
+                <p>The term "quantitative investing" does not describe a single unified strategy; rather, it explains
+                    how specific strategies are developed and implemented. The difference between a quantitative
+                    strategy and a discretionary strategy lies in the way the strategy is created and executed.</p>
+                <p>Quantitative strategies use computer algorithms to make systematic, automated trading decisions.
+                    However, the ultimate responsibility for quantitative trading remains with people—not machines. It
+                    is humans who conduct research, decide on strategies, choose which securities to trade, select data,
+                    and determine the hardware and connectivity required. Those involved are often called "quants." </p>
+                <h2>Classification of Quantitative Trading Strategies</h2>
+                <p>Quantitative trading strategies are generally classified based on:</p>
+                <ul>
+                    <li>Asset classes</li>
+                    <li>Signal types</li>
+                </ul>
+                <p>These two factors typically determine the sub-strategies. For example:</p>
+                <p>If a fund mainly uses short-term, technical signals to trade individual stocks with brief holding
+                    periods, it may be classified as a statistical arbitrage fund. In contrast, if a fund only trades
+                    "macro instruments" such as futures, forex, and bonds—predicting prices as functions of short‐term
+                    technical indicators and long‐term fundamental indicators—it may be classified as a quantitative
+                    macro fund.</p>
+                <h2>Types of Quantitative Hedge Funds</h2>
+                <h2>Most Common Quantitative Strategies</h2>
+                <ul>
+                    <li>Statistical Arbitrage in Equities</li>
+                    <li>Quantitative Equity Market Neutral Strategy</li>
+                    <li>Managed Futures/CTA</li>
+                    <li>Quantitative Macro</li>
+                    <li>Alternative Risk Premia</li>
+                </ul>
+                <p>This list is not exhaustive; other strategy classifications exist, for example:</p>
+                <p>Multi-strategy Quantitative: Funds that trade multiple asset classes simultaneously and/or combine
+                    short-term statistical arbitrage with long-term models, often categorized as "statistical
+                    arbitrage."</p>
+                <p>Quantitative Volatility: Funds that aim to capture changes in volatility are sometimes termed
+                    volatility traders, even if executed via a quantitative process. If combined with other quantitative
+                    strategies, they are usually classified under “statistical arbitrage.”</p>
+                <h2>Risk and Return Summary</h2>
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <th>Strategy</th>
+                            <th>Typical Assets</th>
+                            <th>Market Orientation/Neutral</th>
+                            <th>Observed Beta Relative to Traditional Assets</th>
+                            <th>Long/Short Bias</th>
+                            <th>Historical Volatility</th>
+                            <th>Typical Factor Exposure</th>
+                            <th>Liquidity</th>
+                            <th>Leverage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Statistical Arbitrage in Equities</td>
+                            <td>Stocks</td>
+                            <td>Mainly market neutral</td>
+                            <td>Typically very low</td>
+                            <td>None</td>
+                            <td>Below that of typical hedge funds</td>
+                            <td>Tightly hedges common factors</td>
+                            <td>Generally highly liquid</td>
+                            <td>Typically 3-8x</td>
+                        </tr>
+                        <tr>
+                            <td>Quantitative Equity Market Neutral</td>
+                            <td>Stocks</td>
+                            <td>Mainly market neutral</td>
+                            <td>Typically very low</td>
+                            <td>None</td>
+                            <td>Below that of typical hedge funds</td>
+                            <td>May hedge common factors but holds specific exposures</td>
+                            <td>Generally highly liquid</td>
+                            <td>Typically 3-8x</td>
+                        </tr>
+                        <tr>
+                            <td>CTA</td>
+                            <td>Liquid futures – stocks, fixed income, commodities</td>
+                            <td>Typically directional</td>
+                            <td>Generally lower</td>
+                            <td>May be directional with no systematic bias</td>
+                            <td>Higher than broadly diversified hedge funds</td>
+                            <td>Usually highly momentum‐exposed</td>
+                            <td>Generally highly liquid</td>
+                            <td>Typically 2-4x (nominally 10-30%)</td>
+                        </tr>
+                        <tr>
+                            <td>Quantitative Macro/GAA</td>
+                            <td>Similar to CTA plus cash instruments, bonds, forex, ETFs, derivatives</td>
+                            <td>Tends toward relative value with partial directional bias</td>
+                            <td>Generally lower</td>
+                            <td>May show directional bias but no systematic tilt</td>
+                            <td>Higher than broadly diversified hedge funds</td>
+                            <td>Diversified; may be tightly hedged, possibly with momentum or value bias</td>
+                            <td>Generally highly liquid</td>
+                            <td>Typically 2-4x (nominally 15-40%)</td>
+                        </tr>
+                        <tr>
+                            <td>Alternative Risk Premia</td>
+                            <td>Mainly stocks – may also trade derivatives</td>
+                            <td>Generally market neutral over the long term</td>
+                            <td>Usually low to moderate</td>
+                            <td>Generally no bias</td>
+                            <td>May experience significant factor moves with extended drawdowns</td>
+                            <td>Designed with high factor exposure</td>
+                            <td>Generally highly liquid</td>
+                            <td>Diversified (1.5–2.0x)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Statistical Arbitrage in Equities</h2>
+                <h3>Description</h3>
+                <p>Statistical arbitrage funds typically utilize price data and its derivatives (such as correlations,
+                    volatility, and other forms of market data like volume and order book information) to detect
+                    patterns. By studying historical data, they identify repeatable patterns and data correlations to
+                    help managers forecast future stock returns over short periods. Rigorous statistical analysis and
+                    backtesting are used to verify relationships. The strategy aims for risk-adjusted returns that
+                    exceed those of more “traditional” hedge funds, though actual returns depend heavily on leverage and
+                    volatility tolerance.</p>
+                <h3>Signal Types</h3>
+                <ul>
+                    <li>Mean Reversion: Seeks to exploit short-term price imbalances where prices are expected to return
+                        to their "equilibrium" level.</li>
+                    <li>Momentum: Searches for patterns in price data that indicate a continuation of price movements
+                        (i.e. trends).</li>
+                    <li>Event Driven: Includes factors such as analyst earnings expectations, news sentiment, mergers
+                        and acquisitions, stock buybacks, index rebalancing, and insider trading.</li>
+                </ul>
+                <p>Some statistical arbitrage funds may also incorporate long-term models driven by fundamental data. If
+                    these fundamentally driven models are the main risk drivers, the fund is closer to a quantitative
+                    market neutral strategy (QEMN).</p>
+                <h3>Performance Across Markets</h3>
+                <p>Statistical arbitrage portfolios generally generate returns on top of broad market movements. During
+                    periods of soaring inter-stock correlations and market volatility spikes, statistical arbitrage may
+                    experience sharp drawdowns. However, extreme volatility is often followed by attractive
+                    opportunities. Environments of low volatility and low trading volume may be unfavorable, while
+                    moderate price fluctuations and discrepancies are conducive to success. Sudden risk events or
+                    unforeseeable factors may challenge the model.</p>
+                <h3>Example Trade</h3>
+                <p>Suppose the fund identifies that Coca-Cola and Pepsi have historically been highly correlated. If
+                    Pepsi’s stock drops briefly due to a liquidity imbalance, the fund might buy the undervalued Pepsi
+                    while shorting the overvalued Coca-Cola, expecting the price ratio to revert to its historical
+                    average.</p>
+                <h3>Risk/Return Characteristics</h3>
+                <p>Market Neutral: Typically operates with very low beta. Other common factor exposures are usually
+                    hedged. Leverage may be higher but is managed through stop-losses, position size limits, and factor
+                    exposure constraints.</p>
+                <h2>Quantitative Equity Market Neutral Strategy (“QEMN”)</h2>
+                <h3>Description</h3>
+                <p>The QEMN strategy uses a blend of fundamental and event-driven data (such as analyst earnings
+                    forecasts, financial data) that is processed systematically to score/rank stocks. By means of
+                    optimization or simple rules, the strategy constructs a market neutral long-short portfolio while
+                    minimizing industry exposures.</p>
+                <h3>Signal Types</h3>
+                <ul>
+                    <li>Fundamental Data: Earnings, revenue, profit margins, cash flow, etc.</li>
+                    <li>Technical Data: Moving averages, RSI, volume, price momentum, etc.</li>
+                    <li>Sentiment Data: News articles, social media posts, analyst reports, etc.</li>
+                    <li>Alternative Data: Such as satellite imagery, credit card data, weather patterns, etc.</li>
+                </ul>
+                <p>Machine learning algorithms are used to screen and combine these signals to ultimately build a market
+                    neutral long-short portfolio.</p>
+                <h3>Performance Across Markets</h3>
+                <p>Like statistical arbitrage, QEMN can face challenges during periods of extreme volatility and rising
+                    correlations. It tends to perform better when stock prices are more driven by fundamentals and there
+                    are reasonable pricing discrepancies.</p>
+                <h3>Example Trade</h3>
+                <p>
+                    Data Collection & Processing: Collect financial statements, earnings reports, and alternative data
+                    such as news articles and social media sentiment.<br>
+                    Signal Generation: Compute signals for value (e.g. P/E ratio), growth (e.g. earnings growth rate),
+                    momentum (price trends), and quality (ROE, debt levels, etc.).<br>
+                    Portfolio Construction & Risk Management: Select roughly 100 long and 100 short stocks while
+                    ensuring industry and market-cap neutrality, using stop-losses and position limits to manage risk.
+                </p>
+                <h3>Risk/Return Characteristics</h3>
+                <p>Low beta and market neutrality. Some QEMN strategies may exhibit specific style factor exposures (for
+                    example, value or momentum) and sometimes include timing signals. Leverage levels are typically in
+                    the 3–8x range and are maintained neutrally through hedging.</p>
+                <h2>Managed Futures/CTA</h2>
+                <h3>Description</h3>
+                <p>Commodity Trading Advisors (CTAs) typically take primarily directional positions in indices or "macro
+                    instruments" (such as futures or forex) in a systematic manner. The most common strategy is trend
+                    following, using technical price signals to buy rising markets and sell falling ones, and
+                    rebalancing positions when trends reverse. As the trend following concept has become popular, some
+                    more "generalized" CTA strategies now boast lower fees.</p>
+                <h3>Signal Types</h3>
+                <p>Most CTAs rely on price and volume data to identify trends. They may also incorporate yield curve
+                    information, seasonality, mean reversion, or pattern recognition, and some even include fundamental
+                    or alternative data. Short-term high-frequency patterns may also be examined.</p>
+                <h3>Performance Across Markets</h3>
+                <p>CTAs typically show low correlations with stocks and bonds, often performing well in periods of high
+                    volatility or crises while suffering in choppy or low volatility, range-bound markets. They tend to
+                    generate significant profits in sustained trending markets; however, abrupt reversals or rapid
+                    changes in macro conditions can result in prolonged drawdowns.</p>
+                <h3>Example Trade</h3>
+                <p>
+                    Directional Position: For example, taking long and short positions in stock index futures.<br>
+                    Relative Value: For example, trading the spread between Brent and WTI crude oil contracts, or
+                    engaging in “curve trading” between different maturities of futures contracts.
+                </p>
+                <h3>Risk/Return Characteristics</h3>
+                <p>
+                    Diversification: Spanning stock indices, government bonds, commodity futures, and currency
+                    futures.<br>
+                    Low Correlation: Generally low correlation with stocks and bonds.<br>
+                    High Volatility and Drawdowns: Expected Sharpe ratios are around 0.5–1.0, making them less suitable
+                    for investors solely chasing high Sharpe.<br>
+                    Capital Efficiency: Margins are typically only 10–25% of total equity.<br>
+                    Mechanical Risk Control: The portfolio size is dynamically adjusted based on market conditions.
+                </p>
+                <h2>Quantitative Macro and Global Asset Allocation (“GAA”)</h2>
+                <h3>Description</h3>
+                <p>Quantitative macro involves analyzing a wide array of economic, market, and other fundamental
+                    indicators and making trading decisions based on statistical models. While it overlaps with CTAs in
+                    trading futures and other macro instruments, quantitative macro tends to be driven by long-term
+                    fundamentals (such as GDP, inflation, and exchange rates).</p>
+                <p>Quantitative Macro/GAA funds typically:</p>
+                <ul>
+                    <li>Focus on relative value trading while sometimes taking directional positions.</li>
+                    <li>Use a wide range of signals based on economic data, cross-country differences, alternative data,
+                        and technical indicators.</li>
+                    <li>Have holding periods ranging from several weeks to months, or even shorter.</li>
+                </ul>
+                <h3>Signal Types</h3>
+                <p>
+                    Macro-economic factors: GDP, inflation, interest rates, exchange rates, import/export data, etc.<br>
+                    Traditional signals: Value, yield, momentum (trend), etc.<br>
+                    More complex elements: Such as weather, transportation data, geopolitical events, and policy
+                    changes.
+                </p>
+                <h3>Performance Across Markets</h3>
+                <p>Quantitative macro tends to perform well during economic uncertainty such as recessions or
+                    geopolitical crises. However, in stable markets with slow changes or when fundamentals are out of
+                    sync with market prices, performance may suffer. Its effectiveness heavily depends on data quality
+                    and the adaptability of the models.</p>
+                <h3>Example Trade</h3>
+                <p>
+                    Relative Value Model on Macro Instruments: Trading based on differences in interest rates and
+                    inflation forecasts affecting exchange rates.<br>
+                    Cross-Asset Strategy: Taking long and short positions by dynamically exploiting relationships
+                    between commodities, forex, and bonds.
+                </p>
+                <h3>Risk/Return Characteristics</h3>
+                <p>
+                    Similar to CTAs, it features low correlation and high liquidity.<br>
+                    Vulnerable to unforeseen risk factors, necessitating careful risk management and model
+                    adjustments.<br>
+                    It should not exhibit a fixed long or short bias.<br>
+                    Higher volatility than most hedge funds yet provides diversified returns in a portfolio.
+                </p>
+                <h2>Alternative Risk Premia</h2>
+                <h3>Description</h3>
+                <p>Alternative Risk Premia (ARP) strategies aim to systematically harvest returns from specific risk
+                    factors such as value, momentum, low volatility, high yield, convergence spreads, or M&A risk
+                    premia. The concept is to capture these factor premiums through a replicable and dynamic
+                    process—typically at lower fees—thereby diversifying exposures across multiple factors and markets
+                    to enhance risk-adjusted returns.</p>
+                <h3>Signal Types</h3>
+                <p>Common factors include value, momentum, yield differentials, volatility, quality, liquidity, etc.
+                    Each factor corresponds to specific trading rules (for example, buying undervalued and selling
+                    overvalued stocks; going long on positive momentum and short on negative momentum). It may also
+                    include risk arbitrage such as merger arbitrage or convertible arbitrage.</p>
+                <h3>Performance Across Markets</h3>
+                <p>ARP strategies may perform variably during market turbulence; their attraction lies in low
+                    correlation with traditional assets. When asset correlations converge and extreme risk events occur,
+                    ARP may also suffer drawdowns. Performance can vary greatly between ARP funds based on the chosen
+                    factor mix and hedging methods.</p>
+                <h3>Example Trade</h3>
+                <p>
+                    Spread Trade: Simultaneously buying the undervalued asset and shorting the overvalued one between
+                    gold and silver to capture reversion.<br>
+                    Carry Trade: Allocating positions to high-yield assets while hedging lower-yield assets by
+                    exploiting interest rate or yield differentials.
+                </p>
+                <h3>Risk/Return Characteristics</h3>
+                <p>The strategy is designed to be market neutral or low beta, though it is exposed to specific factors.
+                    In extreme cases, it may face significant drawdowns. Generally, it maintains high liquidity through
+                    trades in futures, swaps, ETFs, etc., and typically uses moderate leverage (1.5–2.0x) to boost
+                    returns.</p>
+            </article>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
