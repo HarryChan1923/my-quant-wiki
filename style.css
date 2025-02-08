@@ -25,7 +25,7 @@ body::before {
     background-color: rgba(254, 238, 246, 0.56);
     /* 提高不透明度 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
+    border-radius: 30px;
     backdrop-filter: blur(10px);
     animation: fadeInUp 0.8s ease-out;
     margin: 20px 50px;
@@ -81,7 +81,7 @@ body::before {
 .search-box input {
     padding: 0.5rem;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 30px;
     /* 圆润效果 */
     margin-right: 0.5rem;
 }
@@ -91,7 +91,7 @@ body::before {
     border: none;
     background-color: #007bff;
     color: #fff;
-    border-radius: 8px;
+    border-radius: 30px;
     /* 圆润效果 */
     cursor: pointer;
 }
@@ -106,7 +106,7 @@ body::before {
     margin: 20px 50px;
     /* 与导航栏左右保持一致 */
     /* 半透明背景 */
-    border-radius: 16px;
+    border-radius: 30px;
     /* 更圆润 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
@@ -172,7 +172,7 @@ body::before {
     border: none;
     background-color: #007bff;
     color: #fff;
-    border-radius: 12px;
+    border-radius: 30px;
     /* 增加圆角 */
     cursor: pointer;
 }
@@ -201,7 +201,7 @@ body::before {
     padding: 1rem;
     background-color: rgba(254, 238, 246, 0.56);
     margin: 20px 50px;
-    border-radius: 12px;
+    border-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.6s ease;
 }
